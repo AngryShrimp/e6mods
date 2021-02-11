@@ -1,0 +1,87 @@
+{
+	id: 808,
+	filename: "hidden_quests",
+	order_index: 5,
+	title: "Hidden_Quests",
+	icon: "minecraft:experience_bottle",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Visit The End",
+			x: -10.0d,
+			y: -8.0d,
+			description: ["Visit The End"],
+			id: 809,
+			tasks: [{
+				id: 810,
+				type: "dimension",
+				dimension: "minecraft:the_end"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -8.0d,
+			id: 1132,
+			tasks: [{
+				id: 1133,
+				type: "advancement",
+				icon: "minecraft:diamond",
+				advancement: "minecraft:story/mine_diamond",
+				criterion: ""
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -8.0d,
+			id: 1134,
+			tasks: [{
+				id: 1135,
+				type: "advancement",
+				advancement: "minecraft:story/smelt_iron",
+				criterion: ""
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -8.0d,
+			id: 1203,
+			tasks: [{
+				id: 1204,
+				type: "item",
+				item: "aquaculture:neptunes_bounty"
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -6.5d,
+			id: 2134,
+			tasks: [{
+				id: 2135,
+				type: "advancement",
+				advancement: "tetra:spelunking/ancient_ruins",
+				criterion: ""
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -6.5d,
+			description: [
+				"Only here to use as a hidden dependency for the powah power challenge quest, so we can hide it until it's actually completable",
+				"",
+				"Do not delete before that's the case"
+			],
+			id: 3384,
+			tasks: [{
+				id: 3385,
+				type: "checkmark",
+				title: "PowahChallengeTMP",
+				icon: {
+					id: "powah:battery_nitro",
+					Count: true,
+					tag: {}
+				}
+			}]
+		}
+	]
+}
